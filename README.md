@@ -13,6 +13,7 @@ https://maven.apache.org/
 
 Automated Tests
 Tests to validate equivalence partitions related to the product value in Lojinha, which are directly tied to the business rule stating that the product value must be between R$ 0.01 and R$ 7,000.00.
+
 General Notes
 • 	We always use the  annotation to capture the token that will be used later in the test methods.
 • 	We store the data sent to the API using POJO classes.

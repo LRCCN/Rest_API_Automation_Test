@@ -1,20 +1,21 @@
-## Lojinha API Automação
-Esse é um repositório que contém a automação de alguns testes de API Rest de um software denominado Lojinha. Os sub-tópicos abaixo descrevem algumas decisões tomadas na estruturação do projeto.
-## Tecnologias Utilizadas
-- Java
-  https://www.oracle.com/java/technologies/downloads/
-- JUnit
-  https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine/5.8.2
-- RestAssured
-  https://mvnrepository.com/artifact/io.rest-assured/rest-assured/5.1.1
-- Maven
-  https://maven.apache.org/
+Lojinha API Automation
+This repository contains the automation of several REST API tests for a software called Lojinha. The subtopics below describe some decisions made during the project's structuring.
 
-## Testes Automatizados
-Testes para validar as partições de equivalênca relacionadas ao valor do produto na Lojinha que estão vinculados diretamente a regra de negócio que diz que o valor do produto deve estar entre R$ 0,01 e R$ 7.000,00.
+Technologies Used:
+• 	Java
+https://www.oracle.com/java/technologies/downloads/
+• 	JUnit
+https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine/5.8.2
+• 	RestAssured
+https://mvnrepository.com/artifact/io.rest-assured/rest-assured/5.1.1
+• 	Maven
+https://maven.apache.org/
 
-## Notas Gerais
-- Sempre utilizamos a anotação Before Each para capturar o token que será utilizado posteriormente nos métodos de teste.
-- Armazenamos os dados que são enviados para API através do uso de classes POJO
-- Criamos dados iniciais através do uso de classe Data Factory, para facilitar a criação e controle dos mesmos
-- Nesse projeto fazemos uso do JUnit 5, o que nos dar a possibilidade de usar a anotação DisplayName para dar descrições em português para nossos testes.
+Automated Tests
+Tests to validate equivalence partitions related to the product value in Lojinha, which are directly tied to the business rule stating that the product value must be between R$ 0.01 and R$ 7,000.00.
+
+General Notes
+• 	We always use the  annotation to capture the token that will be used later in the test methods.
+• 	We store the data sent to the API using POJO classes.
+• 	We create initial data using a Data Factory class to simplify data creation and management.
+• 	This project uses JUnit 5, which allows us to use the  annotation to provide Portuguese descriptions for our tests.
